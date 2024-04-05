@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Scroll to Section</title>
+    <style>
+        /* animation=================*/
+        .content-text {
+            animation: moveleft 1s forwards;
+        }
+
+        .side1 {
+            animation: fadeInUp 1s forwards;
+        }
+
+        .side2 {
+            animation: fadein 1.4s forwards;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 1;
+                transform: translateY(130px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes moveleft {
+            0% {
+                opacity: 0;
+                transform: translateX(-85px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0.8;
+                transform: translateY(80px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><b>Q</b>UIZ<strong>APP</strong></div>
+        <div class="tab">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img src="IMG20170729125017.jpg" alt="Profile Picture" class="profile-picture">
+            </div>
+        </div>
+    </header>
+
+    <div class="links-container">
+        <a href="#home" class="link selected">Home</a>
+        <a href="#leaderboards" class="link">Leaderboards</a>
+        <a href="#history" class="link">History</a>
+    </div>
+
+    <section id="home">
+        <div class="content">
+            <div class="content-text">
+                <h1><b>WELCOME</b> to <em>Quiz App</em></h1>
+                <h3>Prepare to showcase your skills and
+                    see how well you dare in this thought-provoking quiz.</h3>
+                <hr>
+                <p>This is a simple quiz application where you can test your knowledge.</p>
+            </div>
+            <div class="btns">
+                <div class="side-box side1">
+                    <h3 class="gg">CLASSROOM</h3>
+                    <p>Enter your assignments and modules way more convenient</p>
+                    <a href="classroom.html"><button class="g">Go to Classroom</button></a>
+
+                </div>
+                <div class="side-box side2">
+                    <h3>QUIZZES</h3>
+                    <p>Test your intelligence and learn more</p>
+                    <a href="#"><button>Go to Quizzes</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leaderboards">
+        Leaderboards Section
+    </section>
+
+    <section id="history">
+        History Section
+    </section>
+
+    <script src="homepage.js"></script>
+    <script>
+        // Scroll to the top of the page when the page is loaded or refreshed
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+
+</html>

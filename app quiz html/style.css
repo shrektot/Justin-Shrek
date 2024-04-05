@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #444;
+}
+.image {
+    top: 0;
+}
+img {
+    object-fit: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 110px 70px 150px 70px;
+    border-radius: 9px;
+    background-color: #131313bb;
+    text-align: center;
+}
+
+.container h2 {
+    color: rgb(225, 226, 255);
+    text-shadow: 1px 1px 3px #000000;
+}
+
+.container b {
+    text-shadow: 1px 1px 4px #000000;
+    color: blue;
+}
+.container p {
+    line-height: 20px;
+    text-shadow: 1px 1px 3px #000000;
+    color: rgb(253, 253, 255);
+}
+
+.container .button {
+    padding: 90px 0 0 0;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    transform: transform 0.4s ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #131313;
+    color: orangered;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+footer .foot{
+    background-color: transparent;
+    
+}
